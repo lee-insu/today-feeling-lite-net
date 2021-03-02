@@ -1,0 +1,1345 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {box-sizing: border-box;}
+body {margin: 0 auto; font-family: AppleSDGothicNeo;}
+a {all:unset;}
+a:link {text-decoration: none;}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none; color: #707070;}
+a:hover{text-decoration: none; cursor: pointer;}
+ul {margin: 0; padding: 0;}
+li{list-style: none;}
+button:hover{cursor: pointer;}
+
+
+.info {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+header {
+    width: 100%;
+    height: 88px;
+    margin: 0;
+    box-shadow: 0 6px 6px 0 rgba(230, 230, 230, 0.16);
+    
+}
+
+.inner {
+    width: 1205px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+nav {
+    display: flex;
+
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.burger div {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(192, 192, 192);
+    margin: 0px 0px 10px 0px;
+    top: 3.5rem;
+    left: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    
+}
+.header-logo {margin: 25px 0 21px 43%;}
+
+.logo {
+  width: 171px;
+  height: 42px;
+}
+
+.header-list {width: 100%;}
+
+.header-list ul {
+    width: 21%;
+    height: 100%;
+    margin:42px 0 29px 21.8%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.header-list > ul > li {
+  width: 100%;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+
+.header-list > ul > li >a:hover {
+    transition: 0.2s;
+    color:#EB7E52
+
+}
+
+section {width: 100%;}
+
+.face-upload {
+    margin-top: 2px;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.face-image{transition: 0.2s;}
+
+.face-image:hover {transform:scale(1.02) translate(0, -5px);}
+
+.blah {
+    position: relative;
+    left: 23.5%;
+    top:10%
+}
+
+.upload-hand-image {width: 100%;}
+
+
+
+#face-image {
+    width: 50%;
+}
+
+.face-text {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 28px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    color: #707070;
+    position: absolute;
+    bottom: 3rem;
+    left:24rem;
+ 
+
+}   
+
+.text {
+    bottom: 1rem;
+}
+.upload-hand-image {
+    width: 371px;
+    height: 400px;
+    top:80px;
+    left:400px;
+    position: absolute;
+    cursor: pointer;
+    border: 5px dashed rgb(245, 245, 245);
+    border-radius: 20%;
+    padding: 3rem;
+
+}
+
+.input-list {
+    margin-top: 1rem;
+}
+
+.input-list > div {
+    width: 100%;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+}
+
+.del-data {
+    margin: 0;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #868686;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+#input-image {
+    position: absolute;
+     width: 1px; 
+     height: 1px; 
+     padding: 0; 
+     margin: -1px; 
+     overflow: hidden; 
+     clip:rect(0,0,0,0); 
+     border: 0;
+    
+}
+
+.image-result {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+#label-container > div {
+    display: flex;
+    
+}
+
+#loading {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.loading-message {
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: normal;
+        color: #707070;
+        position: relative;
+}
+.content-container {width: 100%; margin-top: 30px;}
+
+
+
+
+.content-title {
+    width: 100%;
+    height: 43px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+    margin-left: 138px;
+      }
+
+.content-list {
+    margin-top: 35px;
+    width: 100%;
+    position: relative;
+   
+}
+
+.emotion-list {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.emotion-card {margin: 0 31px 28px 0; transition: 0.4s;}
+
+.emotion-card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 0 8px 8px 0 rgba(250, 230, 230, 0.16);
+}
+
+
+.emotion-image > img {
+    max-width: 278px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 6px 8px 6px 0 rgba(216, 216, 216, 0.16);
+}
+
+.emotion-desc {
+    width: 100%;
+    height: 33px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+    margin-top: 19px;
+}
+
+.user-inner {
+    width: 427px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden ;
+}
+
+.margin-top {
+    margin-top: 5rem;
+}
+
+.title-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 68px;
+}
+
+.login-title {
+  width: 100%;
+  height: 52px;
+  font-family: AppleSDGothicNeo;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color:#707070
+
+}
+
+
+
+.info-title {
+  width: 50%;
+  margin: 0 auto;
+  height: 24px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+  margin: 24px 0 11px 0;
+}
+input {
+    font-size: 15px;
+}
+.id, .pw, .pwre {
+  width: 427px;
+  height: 42px;
+  border-radius: 4px;
+  border: solid 1px #bebebe;
+  background-color: #ffffff;
+}
+
+.input-box {
+    width: 12rem;
+    height: 1.7rem;
+    border-radius: 4px;
+    border: solid 1.5px #bebebe;
+    background-color: #ffffff;
+  }
+
+.input-data {
+  border: solid 0px;
+  border-radius: 2px;
+  padding: 4px;
+  font-family: AppleSDGothicNeo;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.24;
+  text-align: center;
+  color: #fff;
+  background-color:#EB7E52 ;
+  
+
+}
+
+.info-list {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.info-list > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-list > ul > li > a {
+  height: 15px;
+  font-family: AppleSDGothicNeo;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bebebe;
+  transition: 0.3s;
+}
+
+.info-list >ul > li > a:hover {
+    color:#707070
+}
+
+.on-session {
+    margin-top:30px;
+    background-color: #fff;
+}
+
+.button-session {
+    width: 26.8rem;
+    position: relative;
+    margin-top: 2rem;
+}
+.btn-style{
+    width: 100%;
+    height: 63px;
+    border: solid 0px;
+    border-radius: 8px;
+    
+  font-family: AppleSDGothicNeo;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.login-btn {
+    background-color: #EB7E52;
+    color: #fff;
+}
+
+.kakao-btn{
+    margin-top: 14px;
+    background-color: #f7e600;
+    color:#000
+}
+
+.google-btn {
+    background-color: #f7f7f7;
+}
+
+.or-line-stoke{
+    width: 427px;
+    height: 0.5px;
+    border: solid 0.5px #e2e2e2;
+    position: absolute;
+}
+
+.register-title {
+    width: 100%;
+    height: 52px;
+    font-family: AppleSDGothicNeo;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color:#707070
+  
+  }
+
+  .sele {
+    width: 100%;
+    height: 15px;
+    font-family: AppleSDGothicNeo;
+    font-size: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align:center;
+    color: #bebebe;
+    margin: -8px 0 5px 0;
+}
+
+.emotion-container {
+    margin-top: 3rem;
+    width: 45%;
+    margin: 0 auto
+}
+
+.emotion-title {
+  height: 100%;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f0808;
+}
+
+.emotion-image{
+    margin-top: 16px;
+    text-align: center;
+}
+.emotion-image > img {
+    max-width: 587px;
+    max-height: 325px;
+
+}
+
+
+.emotion-hash {
+  width: 100%;
+  height: 24px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3232;
+  margin-top: 63px;
+}
+
+.emotion-content {
+  width: 100%;
+  font-family: AppleSDGothicNeo;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3232;
+  margin-top: 8px;
+}
+
+.next, .prev {
+    border: none;
+    background-color: #fff;
+    
+}
+
+.calender-container {
+    margin-top: 10%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+
+    
+}
+
+.date-day {
+    width:27rem;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color:#EB7E52;
+    border: 0px solid;
+    border-radius: 30px;
+}
+
+.cdr-month, .cdr-year {
+    font-family: AppleSDGothicNeo;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(73, 73, 73);
+
+}
+
+.cdr-date {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: AppleSDGothicNeo;
+    font-weight: 600;
+    font-size: 4rem;
+    color:#fff
+    
+}
+
+.day-active, .today {
+    background-color: #EB7E52;
+    border-radius: 4rem;
+    color: #fff;
+}
+
+.cdr-day {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: AppleSDGothicNeo;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:#ffdec8
+}
+
+.feeling-container {
+    margin-top: 3rem;
+}
+
+.feeling-title {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color:#585858;
+}
+
+.calender-box {
+    
+    width: 400px;
+    height: 25rem;
+    margin: 0 auto;
+   
+}
+
+.today-check {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.checked {
+    color: #a0a0a0;
+    text-decoration:line-through
+}
+
+.cdr-box {text-align: center;}
+
+
+.cdr-table {
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    font-family: AppleSDGothicNeo;
+    margin-top: 0.5rem;
+    
+}
+
+.cdr-table > thead {
+    font-size: 0.8rem;
+    color: rgb(114, 114, 114);
+}
+
+.cdr-table > tbody {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cdr-body > tr {
+    margin-bottom: 2rem;
+
+}
+
+.cdr-body > tr >:nth-child(7) {
+    color: rgb(170, 170, 170);
+}
+
+.cdr-body > tr >:nth-child(1) {
+    color: rgb(170, 170, 170);
+}
+
+
+
+.cdr-btn {
+    position: relative;
+    font-size: 16px;
+    border: none;
+}
+
+.push-result {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.push-result > :nth-child(1) {
+    width: 100%;
+    text-align: center;
+    font-family: AppleSDGothicNeo;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.push-result > :nth-child(2) {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: AppleSDGothicNeo;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(167, 167, 167);
+}
+
+.push-result > :nth-child(3) {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: AppleSDGothicNeo;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+}
+
+
+#label-container {
+    width: 100%;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.bar-container {
+    height: 2.7rem;
+}
+
+.feeling-label {
+    margin-top: 0.5rem;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 1.05rem;
+    font-weight: 600;
+   
+   
+}
+
+.feel-list {
+    margin-top: 1rem;
+    position: relative;
+    width: 80%;
+    left: 5rem;
+    margin: 0 auto;
+    
+}
+.기쁨-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #FAFF5C;
+}
+
+.까칠-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #99FF85;
+  }
+
+  .놀람-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: #FF99FF;
+  }
+
+  .분노-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: #FF7070;
+  }
+
+  .소심-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: #9785FF;
+  }
+
+  .슬픔-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: #5C9AFF;
+  }
+
+
+.기쁨-box {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    width: 60%;
+    background-color:#fdffb6
+}
+
+.까칠-box {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    width: 60%;
+    background-color:#caffbf
+}
+
+.놀람-box {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    width: 60%;
+    background-color:#ffc6ff
+}
+
+.분노-box {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    width: 60%;
+    background-color:#ffadad
+}
+
+.소심-box {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    width: 60%;
+    background-color:#bdb2ff
+}
+
+.슬픔-box {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 2rem;
+    border-radius: 5px;
+    width: 60%;
+    background-color:#a0c4ff
+}
+
+.percent-text {
+    margin: 0;
+    position: relative;
+    top: 0.5rem;
+    left: 0.25rem;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 1rem;
+    font-weight:800;
+    color: rgb(41, 41, 41);
+    
+
+}
+
+.reload-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reload {
+    background-color: #71b2ee;
+    padding:10px 15px;
+    border-radius: 6px;
+    border:none;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+    
+}
+
+
+
+
+
+  @media only screen and (max-width: 980px) {
+    .header-list ul {
+        width: 21%;
+        height: 100%;
+        margin:42px 100px 29px 15%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+    }
+
+  }
+  @media only screen and (max-width: 480px) {
+    body {overflow-x: hidden;}
+
+    header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    ul {
+        display: none;
+    }
+    .header-logo {margin: 30px 0 30px 38.5%;}
+
+
+    .logo {
+        width: 48%;
+        height: auto;
+      }
+
+    .face-upload {
+        margin-top:5rem;
+        width: 100%;
+        height: 120vh;
+        position: relative;
+    
+    }
+
+    .face-upload-wrap {
+        position: relative;
+        height: 100%;
+ 
+    }
+
+    .upload-hand-image {
+        position: relative;
+        width: 40rem;
+        border: 5px dashed rgb(245, 245, 245);
+        border-radius: 20%;
+        padding: 2rem;
+        height: auto;
+        left:23%
+    }
+
+    .face-text {
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-size: 40px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: normal;
+        color: #707070;
+        position: relative;
+        width: 100%;
+        margin-top: 9rem;
+        left: 22%;
+        
+    
+    }   
+
+    #loading {
+        height: 30vh;
+    }
+
+    .loading-message {
+        font-size: 2rem;
+    }
+
+    .push-result > :nth-child(1) {
+        font-size: 3.3rem;
+    }
+
+    .push-result > :nth-child(2) {
+        font-size: 2.3rem;
+    }
+
+    .push-result > :nth-child(3) {
+        font-size: 1.3rem;
+    }
+
+    .label-container {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .feeling-label {
+        font-size: 1.5rem;
+    }
+
+    .feel-list {
+        margin-top: 30%;
+        position: relative;
+        width: 80%;
+        height: 6.5vh;
+        left: 5rem;
+        margin: 0 auto;
+        
+    }
+
+    .image-result {
+        height: 90vh;
+    }
+
+    .content-container {
+        width: 100%; 
+        height: 100%;
+        position: relative;
+        
+    }
+
+
+    .content-title {
+        width: 100%;
+        height: 43px;
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-size: 45px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #707070;
+        margin-left: 138px;
+
+        }
+        .기쁨-bar {
+            height: 2.7rem;
+          }
+          
+          .까칠-bar {
+              height: 2.7rem;
+            }
+          
+            .놀람-bar {
+              height: 2.7rem;
+
+            }
+          
+            .분노-bar {
+              height: 2.7rem;
+            }
+          
+            .소심-bar {
+              height: 2.7rem;
+            }
+          
+            .슬픔-bar {
+              height: 2.7rem;
+            }
+          
+          
+          .기쁨-box {
+              height: 2.7rem;
+          }
+          
+          .까칠-box {
+              height: 2.7rem;
+          }
+          
+          .놀람-box {
+              height: 2.7rem;
+          }
+          
+          .분노-box {
+              height: 2.7rem;
+          }
+          
+          .소심-box {
+              height: 2.7rem;
+          }
+          
+          .슬픔-box {
+              height: 2.7rem;
+          }    
+    
+        .content-list {
+            margin-top: 35px;
+            width: 100%;
+            height: auto;
+            position: relative;
+           
+        }    
+
+        .emotion-card {margin: 0 31px 28px 0; transition: 0.4s;}
+        
+        .emotion-image > img {
+            max-width: 278px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 6px 8px 6px 0 rgba(216, 216, 216, 0.16);
+        }
+
+     
+
+        
+        #backtotop {
+            display: none;
+        }
+         
+
+        .header-list > ul {
+            margin: 0;
+            position: absolute;
+            top: 16vh;
+            height: 100vh;
+            background-color: #fff;
+            box-shadow :0px 10px 10px 0px #f0f0f0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            
+        }
+
+
+        .nav-links {
+            position:absolute;
+            transform: translateX(100%);
+
+        }
+
+        .nav-links li {
+            opacity: 0;
+            margin-top: 3rem;
+          }
+
+        .nav-links li a {
+            font-size: 30px;
+            margin-bottom: 5rem;
+        }
+
+        .nav-links li a:after {
+            content: "";
+            display: block;
+            width: 7rem;
+            border-bottom: 1px solid #a09f9f;
+            margin: 3px 0px;
+        }
+        
+        .burger {
+            display: block;
+            width: 100%;
+
+          }
+        .nav-active {
+            transform: translateX(0%);
+          }
+
+          @keyframes navLinkFade {
+            from {
+              opacity: 0;
+              transform: translateX(5px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+
+
+/*calender*/
+ 
+ .calender-container {
+     margin-top: 16rem;
+ }
+
+ .date-day {
+    width: 40rem;;
+ }
+ .cdr-date {
+     font-size: 10rem;
+ }
+.cdr-day {
+    font-size: 4rem;
+}
+.feeling-title {
+    font-size: 3.5rem;
+}
+.input-box {
+    width: 23rem;
+    height: 3.7rem;
+    font-size: 1.5rem;
+    
+}
+.calender-box {
+    width: 55%;
+    height: 35rem;
+    margin: 0 auto;
+   
+}
+.input-data {
+    font-size: 2.2rem;
+    padding: 10px;
+    border-radius: 13px;
+    
+}
+.feeling-input, .calender-box {
+    margin-top: 2rem;
+}
+.cdr-year, .cdr-month, .cdr-btn {
+    font-size: 2.5rem;
+}
+.cdr-table > thead,.day {
+    font-size: 2rem;
+}
+.cdr-table {
+    margin-top: 2rem;
+}
+
+/*register, login*/
+
+.btn-style {
+    width: 26.8rem;
+}
+.button-session{
+    height: 100%;
+    width: 30%;
+}
+
+.register-title, .login-title {
+    font-size: 4rem;
+}
+
+.user-inner {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.info-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.id, .pw, .pwre {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    height:7rem;
+    border-radius: 6px;
+    font-weight: 200;
+    border: solid 1.5px #bebebe;
+    background-color: #ffffff;
+  }
+
+  .button-session {
+      width: 100%;
+      margin-top: 2rem;
+  }
+  .btn-style {
+      width: 100%;
+      height: 7rem;
+      font-size: 2.3rem;
+      margin-top: 1.3rem;
+  }
+  
+  .sele {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 1rem;
+  }
+
+  .or-line-stoke {
+      display:none;
+      
+  }
+
+  /*emotion*/
+
+  .emotion-title {
+      font-size:5rem;
+      color:rgb(66, 66, 66)
+  }
+  .emotion-content-image > img {
+      width: 100%;
+      height: auto;
+      margin-top: 5rem;
+      border-radius: 2rem;
+  }
+
+  .emotion-hash {
+      width: 100%;
+      font-size: 3rem;
+      position: relative;
+  }
+
+  .emotion-content {
+      width: 100%;
+      font-size: 2rem;
+      position: relative;
+      margin-top: 8rem;
+  }
+ .margin-top-5rem {
+    margin-top: 20rem;
+ }
+  .info {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #71b2ee;
+  }
+
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+
+
+#backtotop {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    transition-property: opacity, visibility;
+    transition-duration: 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    color: #fff;
+    
+}
+
+#backtotop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: #D4D1CF;
+}
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+#backtotop.show:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    transform: translate(0,-3px);
+}
