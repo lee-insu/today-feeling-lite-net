@@ -27,7 +27,7 @@ const URL = "https://teachablemachine.withgoogle.com/models/vDBztacir/";
             let image = document.querySelector("#face-image")
             const prediction = await model.predict(image, false);
             prediction.sort((a,b) => parseFloat(b.probability) - parseFloat(a.probability));
-            let resultTitle, resultExplain, resultCause,resultSol;
+            let resultTitle, resultExplain, resultCause;
 
         switch(prediction[0].className) {
             case "기쁨" :
@@ -39,7 +39,7 @@ const URL = "https://teachablemachine.withgoogle.com/models/vDBztacir/";
             case "까칠" :
             resultTitle = "까칠한 키위"
             resultExplain = "#시크절정 #아무도 건들지마 #도도한 매력"
-            resultCause = "시크한 표정을 가지고 있는 당신! 한 쪽 얼굴이 올라가면서 입술의 끝이 당겨집니다. 오늘 도도하다는 말을 듣진 않았나요? 아이러니하게도 도도하고 시크한 표정을 짓고 있으면 외모가 업이 됩니다. 기분은 그렇다치고 오늘 셀카를 찍어보는 건 어떨까요? 그리고 일이나 주변 사람들 때문에 스트레스를 받고 있다면 반신욕으로 기분을 달래보는 건 어떠나요? "
+            resultCause = "시크한 표정을 가지고 있는 당신! 한 쪽 얼굴이 올라가면서 입술의 끝이 당겨져있습니다. 오늘 도도하다는 말을 듣진 않았나요? 아이러니하게도 도도하고 시크한 표정을 짓고 있으면 외모가 업이 됩니다. 기분은 그렇다치고 오늘 셀카를 찍어보는 건 어떨까요? 그리고 일이나 주변 사람들 때문에 스트레스를 받고 있다면 반신욕으로 기분을 달래보는 건 어떨까요? "
             break;
 
             case "놀람" :
