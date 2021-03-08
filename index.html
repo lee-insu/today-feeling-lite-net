@@ -13,10 +13,7 @@
     <header>
        <div class="inner">
            <div class="header-container">
-            <div class="header-logo"><a href="/"><img src="../static/img/logo.png" alt="logo" class="logo"></a></div>
-
-           </div>
-       </div>   
+            <div class="header-logo"><a href="/"><img src="../static/img/logo.png" alt="logo" class="logo"></a></div> 
     </header>
 
     <section>
@@ -25,7 +22,7 @@
             <div class="face-upload-wrap">
             <input id="input-image" type="file" onchange = "readURL(this)" accept="image/png, image/jpeg"/>
              <img class = "upload-hand-image" src="../static/img/hand.jpg" alt="image" onclick="document.querySelector('#input-image').click()">
-             <div class="face-text">&ensp;&ensp;빅데이터로 오늘의 기분을 맞춰볼게요<br>&nbsp; 이미지를 클릭해서 사진을 업로드 해주세요</div>
+             <div class="face-text">오늘 하루 어땠나요? 표정으로 맞춰볼게요</div>
             </div>
             <img id="face-image"class="blah" src="#" alt="">
         </div>
@@ -42,43 +39,43 @@
         </div>
     </section>
    
-    <section class="margin-top-5rem">
+    <section>
         <div class="inner">
             <div class="content-container">
                 <div class="content-title">지금 내 기부니가 이래</div>
                 <div class="content-list">
                     <ul class="emotion-list">
                         <li class="emotion-card">
-                            <a href="/emotion_happy.html">
+                            <a href="../emotion_happy.html">
                             <div class="emotion-image"><img src="../static/img/lemon.jpg" alt="happy"></div>
                             <div class="emotion-desc">행복한 레몬</div>
                             </a>
                             <li class="emotion-card">
-                                <a href="/emotion_timid.html">
+                                <a href="../emotion_timid.html">
                                 <div class="emotion-image"><img src="../static/img/grape.jpg" alt=""></div>
                                 <div class="emotion-desc">소심한 포도</div>
                                 </a>
                             </li>
                             <li class="emotion-card">
-                                <a href="/emotion_anger.html">
+                                <a href="../emotion_anger.html">
                                 <div class="emotion-image"><img src="../static/img/strawberry.jpg" alt=""></div>
                                 <div class="emotion-desc">짜증난 딸기</div>
                                 </a>
                             </li>
                             <li class="emotion-card">
-                                <a href="/emotion_sadness.html">
+                                <a href="../emotion_sadness.html">
                                 <div class="emotion-image"><img src="../static/img/blueberry.jpg" alt=""></div>
                                 <div class="emotion-desc">무표정 블루베리</div>
                                 </a>
                             </li>
                             <li class="emotion-card">
-                                <a href="/emotion_surprise.html">
+                                <a href="../emotion_surprise.html">
                                 <div class="emotion-image"><img src="../static/img/orange.jpg" alt=""></div>
                                 <div class="emotion-desc">놀란 오렌지</div>
                                 </a>
                             </li>
                             <li class="emotion-card">
-                                <a href="/emotion_disgust.html">
+                                <a href="../emotion_disgust.html">
                                 <div class="emotion-image"><img src="../static/img/kiwi.jpg" alt=""></div>
                                 <div class="emotion-desc">까칠한 키위</div>
                                 </a>
@@ -89,12 +86,7 @@
             </div>
         </div>
     </section>
-    
-    <footer class ="inner">
-        <div class="info">사진 이미지는 수집 되지 않습니다</div>
-    </footer>
-    <a id="backtotop"></a>
-    <script src="../static/js/backtotop.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script>
         $('#loading').hide();
