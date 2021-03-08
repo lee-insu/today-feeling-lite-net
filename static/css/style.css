@@ -1,3 +1,19 @@
+
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans-BoldA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {box-sizing: border-box;}
 body {margin: 0 auto; font-family: AppleSDGothicNeo;}
 a {all:unset;}
@@ -74,24 +90,7 @@ nav {
     position: absolute;
 }
 
-.header-list > ul > li {
-  width: 100%;
-  height: 17px;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.21;
-  letter-spacing: normal;
-  text-align: left;
-  color: #707070;
-}
 
-.header-list > ul > li >a:hover {
-    transition: 0.2s;
-    color:#EB7E52
-
-}
 
 section {width: 100%;}
 
@@ -125,9 +124,9 @@ section {width: 100%;}
 }
 
 .face-text {
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-RegularA1';
     font-size: 26px;
-    font-weight: 600;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.19;
@@ -135,7 +134,7 @@ section {width: 100%;}
     color: #707070;
     position: absolute;
     bottom: 4rem;
-    left:24rem;
+    left:23rem;
 
 }   
 .upload-hand-image {
@@ -151,29 +150,9 @@ section {width: 100%;}
 
 }
 
-.input-list {
-    margin-top: 1rem;
-}
 
-.input-list > div {
-    width: 100%;
-    font-family: AppleSDGothicNeo;
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(78, 78, 78);
-}
 
-.del-data {
-    margin: 0;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    color: #868686;
-    font-family: AppleSDGothicNeo;
-    font-size: 15px;
-    font-weight: 600;
 
-}
 
 #input-image {
     position: absolute;
@@ -205,9 +184,9 @@ section {width: 100%;}
 }
 
 .loading-message {
-        font-family: AppleSDGothicNeo;
-        font-size: 1.3rem;
-        font-weight: 400;
+        font-family: 'InfinitySans-RegularA1';
+        font-size: 2rem;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.19;
@@ -223,9 +202,9 @@ section {width: 100%;}
 .content-title {
     width: 100%;
     height: 43px;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-BoldA1';
     font-size: 35px;
-    font-weight: 600;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.23;
@@ -268,9 +247,9 @@ section {width: 100%;}
 .emotion-desc {
     width: 100%;
     height: 33px;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-RegularA1';
     font-size: 28px;
-    font-weight: 600;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.18;
@@ -293,176 +272,6 @@ section {width: 100%;}
     margin-top: 68px;
 }
 
-.login-title {
-  width: 100%;
-  height: 52px;
-  font-family: AppleSDGothicNeo;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  color:#707070
-
-}
-
-.info-container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-
-.info-title {
-  width: 50%;
-  margin: 0 auto;
-  height: 24px;
-  font-family: AppleSDGothicNeo;
-  font-size: 20px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #707070;
-  margin: 24px 0 11px 0;
-}
-input {
-    font-size: 15px;
-}
-.id, .pw, .pwre {
-  width: 427px;
-  height: 42px;
-  border-radius: 4px;
-  border: solid 1px #bebebe;
-  background-color: #ffffff;
-}
-
-.input-box {
-    width: 12rem;
-    height: 1.7rem;
-    border-radius: 4px;
-    border: solid 1.5px #bebebe;
-    background-color: #ffffff;
-  }
-
-.input-data {
-  border: solid 0px;
-  border-radius: 2px;
-  padding: 4px;
-  font-family: AppleSDGothicNeo;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.24;
-  text-align: center;
-  color: #fff;
-  background-color:#EB7E52 ;
-  
-
-}
-
-.info-list {
-    width: 100%;
-    position: relative;
-    margin-top: 10px;
-}
-
-.info-list > ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-list > ul > li > a {
-  height: 15px;
-  font-family: AppleSDGothicNeo;
-  font-size: 12px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #bebebe;
-  transition: 0.3s;
-}
-
-.info-list >ul > li > a:hover {
-    color:#707070
-}
-
-.on-session {
-    margin-top:30px;
-    background-color: #fff;
-}
-
-.button-session {
-    width: 26.8rem;
-    position: relative;
-    margin-top: 2rem;
-}
-.btn-style{
-    width: 100%;
-    height: 63px;
-    border: solid 0px;
-    border-radius: 8px;
-    
-  font-family: AppleSDGothicNeo;
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.24;
-  letter-spacing: normal;
-  text-align: center;
-  margin-bottom: 14px;
-}
-
-.login-btn {
-    background-color: #EB7E52;
-    color: #fff;
-}
-
-.kakao-btn{
-    margin-top: 14px;
-    background-color: #f7e600;
-    color:#000
-}
-
-.google-btn {
-    background-color: #f7f7f7;
-}
-
-.or-line-stoke{
-    width: 427px;
-    height: 0.5px;
-    border: solid 0.5px #e2e2e2;
-    position: absolute;
-}
-
-.register-title {
-    width: 100%;
-    height: 52px;
-    font-family: AppleSDGothicNeo;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    color:#707070
-  
-  }
-
-  .sele {
-    width: 100%;
-    height: 15px;
-    font-family: AppleSDGothicNeo;
-    font-size: 10px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-align:center;
-    color: #bebebe;
-    margin: -8px 0 5px 0;
-}
 
 .emotion-content-image {
     width: 100%;
@@ -486,9 +295,9 @@ input {
 .emotion-title {
   width: 100%;
   height: 100%;
-  font-family: AppleSDGothicNeo;
+  font-family: 'InfinitySans-BoldA1';
   font-size: 40px;
-  font-weight: bold;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.23;
@@ -508,9 +317,9 @@ input {
 .emotion-hash {
   width: 100%;
   height: 24px;
-  font-family: AppleSDGothicNeo;
+  font-family: 'InfinitySans-RegularA1';
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -521,9 +330,9 @@ input {
 
 .emotion-content {
   width: 70%;
-  font-family: AppleSDGothicNeo;
+  font-family: 'InfinitySans-RegularA1';
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -548,121 +357,18 @@ input {
     
 }
 
-.date-day {
-    width:27rem;
-    margin: 0 auto;
-    padding: 5rem;
-    background-color:#EB7E52;
-    border: 0px solid;
-    border-radius: 30px;
-}
 
-.cdr-month, .cdr-year {
-    font-family: AppleSDGothicNeo;
-    font-weight: 600;
-    font-size: 1rem;
-    color: rgb(73, 73, 73);
-
-}
-
-.cdr-date {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    font-family: AppleSDGothicNeo;
-    font-weight: 600;
-    font-size: 4rem;
-    color:#fff
-    
-}
-
-.day-active, .today {
-    background-color: #EB7E52;
-    border-radius: 4rem;
-    color: #fff;
-}
-
-.cdr-day {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    font-family: AppleSDGothicNeo;
-    font-weight: 600;
-    font-size: 1.5rem;
-    color:#ffdec8
-}
 
 .feeling-container {
     margin-top: 3rem;
 }
 
 .feeling-title {
-    font-family: AppleSDGothicNeo;
-    font-weight: 700;
+    font-family: 'InfinitySans-BoldA1';
+    font-weight: normal;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color:#585858;
-}
-
-.calender-box {
-    
-    width: 400px;
-    height: 25rem;
-    margin: 0 auto;
-   
-}
-
-.today-check {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.checked {
-    color: #a0a0a0;
-    text-decoration:line-through
-}
-
-.cdr-box {text-align: center;}
-
-
-.cdr-table {
-    width: 100%;
-    height: 100%;
-    text-align: center; 
-    font-family: AppleSDGothicNeo;
-    margin-top: 0.5rem;
-    
-}
-
-.cdr-table > thead {
-    font-size: 0.8rem;
-    color: rgb(114, 114, 114);
-}
-
-.cdr-table > tbody {
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.cdr-body > tr {
-    margin-bottom: 2rem;
-
-}
-
-.cdr-body > tr >:nth-child(7) {
-    color: rgb(170, 170, 170);
-}
-
-.cdr-body > tr >:nth-child(1) {
-    color: rgb(170, 170, 170);
-}
-
-
-
-.cdr-btn {
-    position: relative;
-    font-size: 16px;
-    border: none;
 }
 
 .push-result {
@@ -673,18 +379,18 @@ input {
 .push-result > :nth-child(1) {
     width: 100%;
     text-align: center;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-BoldA1';
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 .push-result > :nth-child(2) {
     width: 100%;
     text-align: center;
     margin-top: 0.5rem;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-RegularA1';
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: normal;
     color: rgb(167, 167, 167);
 }
 
@@ -693,9 +399,9 @@ input {
     margin: 0 auto;
     text-align: center;
     margin-top: 1rem;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-RegularA1';
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: normal;
     color: rgb(71, 71, 71);
 }
 
@@ -714,9 +420,9 @@ input {
 
 .feeling-label {
     margin-top: 0.5rem;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-BoldA1';
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: normal;
    
    
 }
@@ -849,9 +555,9 @@ input {
     position: relative;
     top: 0.5rem;
     left: 0.25rem;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-BoldA1';
     font-size: 1rem;
-    font-weight:800;
+    font-weight:normal;
     color: rgb(41, 41, 41);
     
 
@@ -868,9 +574,9 @@ input {
     padding:10px 15px;
     border-radius: 6px;
     border:none;
-    font-family: AppleSDGothicNeo;
+    font-family: 'InfinitySans-BoldA1';
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: normal;
     color: rgb(255, 255, 255);
 
     
@@ -963,9 +669,8 @@ input {
     }
 
     .face-text {
-        font-family: AppleSDGothicNeo;
         font-size: 1.1rem;
-        font-weight: 600;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.19;
@@ -974,7 +679,7 @@ input {
         position: relative;
         width: 100%;
         margin-top: 7rem;
-        left: 13%;
+        left: 15%;
         
     
     }   
@@ -1034,9 +739,7 @@ input {
     .content-title {
         width: 100%;
         height: 43px;
-        font-family: AppleSDGothicNeo;
         font-size: 1.5rem;
-        font-weight: 700;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.23;
@@ -1126,16 +829,15 @@ input {
         .emotion-desc {
             width: 100%;
             height: auto;
-            font-family: AppleSDGothicNeo;
             font-size: 1.1rem;
-            font-weight: 600;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.18;
             letter-spacing: normal;
             text-align: left;
             color: #707070;
-            margin-top: 0.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
         }
         
         #backtotop {
