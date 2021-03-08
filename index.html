@@ -6,7 +6,7 @@
     <title>오늘의 기분</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 </head>
 <body>
@@ -32,10 +32,7 @@
         <div class="image-result">
         <div class="push-result"></div>
         <div id="label-container"></div>
-        <div>
-          <a href="javascript:sendLink()"><img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /></a>
-          <a href="javascript:shareStoryWeb()"><img src="https://developers.kakao.com/sdk/js/resources/story/icon_small.png" /></a>
-        </div>        
+        <a href="javascript:void(0);" id="share-link" >카카오 링크보내기</a>
         <div class="reload-btn">
         <button class="reload" onclick="location.replace('index.html')"> 다시 시도</button>
         </div>
@@ -114,6 +111,17 @@
             }
 
     </script>
+    <script>
+    Kakao.init('bf0f1e48c0bc08ac27bffb8adca92d11'); 
+ 
+    $("#share-link").click(function(e) { 
+     e.preventDefault(); 
+  
+     Kakao.Link.sendCustom({
+       templateId: 49196    
+     });
+    });
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
     <script src="../js/emotion.js"></script>
