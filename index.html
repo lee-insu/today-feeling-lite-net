@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta propery="og:type" content="website" />
+
+    <meta property="og:title" content="표정으로 관상을 알아봐요!" />
+    <meta property="og:description" content="남들에게 보여지는 나의 이미지가 궁금 하신가요? 오늘까지 무료로 테스트 할 수 있는 표정 테스트 " />
+    <meta property="og:image" content="../static/img/lemon.jpg" />
+    <meta property="og:url" content="https://elated-ritchie-809934.netlify.app/" />
+    <meta property="og:site_name" content="표정 관상테스트" />
+    
+    
     <title>오늘의 기분</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
@@ -32,10 +41,11 @@
         <div class="image-result">
         <div class="push-result"></div>
         <div id="label-container"></div>
-        <a href="javascript:void(0);" id="share-kakao" >카카오 링크보내기</a>
-        <a href="javascript:void(0);" id="share-facebook">페이스북 링크</a>
-        <a href="javascript:void(0);" id="share-url">urllink</a>
-
+        <div class="share-container">
+        <a href="javascript:void(0);" id="share-facebook" ><img src="../static/img/facebook.png" alt="facebook"></a>
+        <a href="javascript:void(0);" id="share-kakao"><img src="../static/img/kakao.png" alt="kakao"></a>
+        <a href="javascript:void(0);" id="share-url"><img src="../static/img/url.png" alt="url"></a>
+        </div>
         <div class="reload-btn">
         <button class="reload" onclick="location.replace('index.html')"> 다시 시도</button>
         </div>
