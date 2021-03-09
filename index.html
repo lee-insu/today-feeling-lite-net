@@ -33,6 +33,9 @@
         <div class="push-result"></div>
         <div id="label-container"></div>
         <a href="javascript:void(0);" id="share-kakao" >카카오 링크보내기</a>
+        <a href="javascript:void(0);" id="share-facebook">페이스북 링크</a>
+        <a href="javascript:void(0);" id="share-url">urllink</a>
+
         <div class="reload-btn">
         <button class="reload" onclick="location.replace('index.html')"> 다시 시도</button>
         </div>
@@ -123,8 +126,23 @@
             templateId: 49196
         });
     });
- 
+    
+    const shareFacebook = document.querySelector('#share-facebook');
 
+    shareFacebook.addEventListener('click',function() {
+        window.open('http://www.facebook.com/sharer.php?u=https://elated-ritchie-809934.netlify.app/');
+    });
+ 
+    const shareUrl = document.querySelector('#share-url');
+
+    shareUrl.addEventListener('click', function() {
+        window.document.location.href;
+        document.execCommand("copy");
+        alert("주소가 복사되었습니다");
+       
+
+    });
+    
   </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
