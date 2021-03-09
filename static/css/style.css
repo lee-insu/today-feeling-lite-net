@@ -67,7 +67,7 @@ nav {
 
 .header-container {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     margin: 0;
     display: flex;
     
@@ -679,7 +679,7 @@ section {width: 100%;}
         position: relative;
         width: 100%;
         margin-top: 7rem;
-        left: 15%;
+        left: 14%;
         
     
     }   
@@ -746,7 +746,7 @@ section {width: 100%;}
         letter-spacing: normal;
         text-align: left;
         color: #707070;
-        margin-left: 10%;
+        margin-left: 7%;
 
         }
 
