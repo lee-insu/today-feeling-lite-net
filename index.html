@@ -135,12 +135,17 @@
  
     const shareUrl = document.querySelector('#share-url');
 
-    shareUrl.addEventListener('click', function() {
-        window.document.location.href;
-        document.execCommand("copy");
-        alert("주소가 복사되었습니다");
-       
 
+    shareUrl.addEventListener('click', function() {
+        let url ="https://elated-ritchie-809934.netlify.app/";
+        let textarea = document.createElement("textarea");
+        document.body.appendChild(textarea);
+        textarea.value = url;
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("주소가 복사 되었습니다")
+    
     });
     
   </script>
